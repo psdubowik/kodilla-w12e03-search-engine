@@ -1,0 +1,24 @@
+{
+    "name": "kodillaFE_week12ex03_search_engine",
+    "version": "1.0.0",
+    "description": "Countries search engine using JavaScript",
+    "main": "index.js",
+    "scripts": {
+      "test": "test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/psdubowik/kodilla-w12e03-search-engine.git"
+    },
+    "keywords": [
+      "javascript",
+      "twitter"
+    ],
+    "author": "PSD",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/psdubowik/kodilla-w12e03-search-engine/issues"
+    },
+    "homepage": "https://github.com/psdubowik/kodilla-w12e03-search-engine#readme"
+  }
+  

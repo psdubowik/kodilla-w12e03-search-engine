@@ -1,7 +1,7 @@
 var url = "https://restcountries.eu/rest/v2/name/";
 var countriesList = $("#countries");
 
-$("#country-name").keypress(searchCountries);
+$("#country-name").on("keypress", searchCountries);
 
 function searchCountries(){
     var countryName = $("#country-name").val();
@@ -19,8 +19,9 @@ function showCountriesList(resp){
     countriesList.empty();
     resp.forEach(function(item){
 
-        var $li = $("<li>").addClass("liMain");
-        var $liSpan = $("<span>").addClass("flag flag-" + (item.alpha2Code).toLowerCase());
+        var $li = $("<li>").addClass("li-main");
+        var lowerCaseCountrySymbol = (item.alpha2Code).toLowerCase();
+        var $liSpan = $("<span>").addClass("flag flag-" + lowerCaseCountrySymbol);
 
         $li.append($liSpan)
             .append(item.name);
